@@ -34,5 +34,9 @@ new Vue({
   el: '#app',
   router,
   store,
-  template: '<router-view />'
+  template: `
+    <div class="body-root">
+      <router-view />
+    </div>
+  `
 })

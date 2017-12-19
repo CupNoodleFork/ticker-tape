@@ -7,29 +7,24 @@ html {
   height: 100%;
   overflow: hidden;
   font-size: 14px;
+  font-family: "PingFang SC","Hiragino Sans GB", "微软雅黑", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
+
+  body {
+    overflow: auto;
+    height: 100%;
+    .body-root {
+      min-width: 1200px;
+    }
+  }
 }
 
 * {
   box-sizing: border-box;
 }
 
-.body-root {
-  height: 100%;
-  overflow: auto;
-  font-family: "PingFang SC","Hiragino Sans GB", "微软雅黑", Arial, sans-serif;
-}
-.page-body {
-  padding: 0px 20px;
-  overflow: auto;
-
-  .page-body-content {
-    width: 1200px;
-    margin: 0px auto;
-  }
-}
 .relative {
   position: relative;
 }
