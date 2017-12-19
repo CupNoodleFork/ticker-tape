@@ -1,0 +1,14 @@
+%icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-icon {
+  @extend %icon;
+  background-image: url("../assets/images/b-logo@2x.png");
+}
+
+.logo-white-icon {
+  @extend %icon;
+  background-image: url("../assets/images/b-logo-white@2x.png");
+}

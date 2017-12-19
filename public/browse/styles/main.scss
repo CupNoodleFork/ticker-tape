@@ -1,0 +1,45 @@
+@import "./icons";
+@import "./reset";
+@import "./layout";
+@import "./common";
+
+html {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body-root {
+  height: 100%;
+  overflow: auto;
+  font-family: "PingFang SC","Hiragino Sans GB", "微软雅黑", Arial, sans-serif;
+}
+.page-body {
+  padding: 0px 20px;
+  overflow: auto;
+
+  .page-body-content {
+    width: 1200px;
+    margin: 0px auto;
+  }
+}
+.relative {
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.border-radius-2 {
+  border-radius: 2px;
+}
+.border-radius-4 {
+  border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ticker-tape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm --prefix functions run build && npm --prefix public run build && proxychains4 firebase serve --only functions,hosting",
+    "serve:hosting": "npm --prefix public start",
+    "serve:functions": "npm --prefix functions run build && proxychains4 firebase serve --only functions",
+    "deploy": "proxychains4 firebase deploy",
+    "deploy:hosting": "proxychains4 firebase deploy --only hosting",
+    "deploy:functions": "proxychains4 firebase deploy --only functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CupNoodleFork/ticker-tape.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CupNoodleFork/ticker-tape/issues"
+  },
+  "homepage": "https://github.com/CupNoodleFork/ticker-tape#readme",
+  "description": ""
+}
